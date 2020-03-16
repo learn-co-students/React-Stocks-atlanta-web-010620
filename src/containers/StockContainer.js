@@ -3,13 +3,13 @@ import Stock from '../components/Stock'
 
 class StockContainer extends Component {
 
+
+
   render() {
     return (
       <div>
         <h2>Stocks</h2>
-        {
-          //render the list of stocks here
-        }
+        {this.props.renderStocks(this.props.stocks)}
       </div>
     );
   }
@@ -17,3 +17,13 @@ class StockContainer extends Component {
 }
 
 export default StockContainer;
+
+
+
+
+        // return <Stock
+        //         ticker={stock.ticker}
+        //         name={stock.name}
+        //         type={stock.type}
+        //         price={stock.price}
+        //       />
